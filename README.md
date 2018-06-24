@@ -5,7 +5,7 @@ https://hub.docker.com/r/stilliard/pure-ftpd/
 
 # Launch command :
 
-    docker run -d -p 21:21 -p 30000-30059:30000-30059  -v VftpUsers:/home/ftpusers -v VftpPasswd:/etc/pure-ftpd/passwd -v VftpSsl:/etc/ssl/private -v VftpAnonymous:/var/ftp -e PUBLICHOST="ftp.mydomain.com" -e FTP_ANON_DIR="/var/ftp" --restart=always --name Cpure-ftp dukemc/pure-ftps-anonymous-tls3
+    docker run -d -p 21:21 -p 30000-30059:30000-30059  -v VftpUsers:/home/ftpusers -v VftpPasswd:/etc/pure-ftpd/passwd -v VftpSsl:/etc/ssl/private -v VftpAnonymous:/var/ftp -e PUBLICHOST="ftp.mydomain.com" -e FTP_ANON_DIR="/var/ftp" --restart=always --name Cpure-ftp dukemc/pure-ftpd-anonymous-tls3
 
 # Need to create a certificate to work :
 
